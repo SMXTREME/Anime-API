@@ -2,9 +2,9 @@ FROM node:21-slim
 
 WORKDIR /ani
 
-COPY src .
-COPY package.json .
-COPY tsconfig.json .
+COPY src /ani/src/
+COPY package.json /ani/
+COPY tsconfig.json /ani/
 
 RUN npm install
 
