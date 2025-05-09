@@ -7,7 +7,6 @@ COPY package.json /ani/
 COPY tsconfig.json /ani/
 
 RUN npm install
-RUN npm run build
 
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "dev"]
 EXPOSE 3001
